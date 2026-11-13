@@ -1,7 +1,6 @@
 ---
 name: "CodeArchitectureExpert"
 description: "Document current architecture as C4 views for an As-Is System Reference, or propose proportionate target architecture from supplied business/product evidence; define component/data/interface and trust contracts without implementation or approval."
-argument-hint: "Product requirements, business evidence, current technical constraints, architecture goal and optional output directory."
 user-invocable: false
 tools: [read, search]
 agents: []

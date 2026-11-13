@@ -4,8 +4,6 @@ description: >
   Generate and scaffold frontend projects built with TypeScript, React, and Vite.
   Invoke for application UI, responsive screen and CSS work, component architecture,
   state management (Redux/Zustand), build configuration, and testing setup.
-argument-hint: >
-  Frontend goal, user workflows, visual direction, existing styling system, and testing needs.
 user-invocable: false
 disable-model-invocation: false
 tools: [read, edit, search, execute]

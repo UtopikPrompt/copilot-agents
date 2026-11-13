@@ -1,7 +1,6 @@
 ---
 name: "CodeDomainAdvisor"
 description: "Optional coding specialist-selection advisor for ambiguous cross-stack work. Returns a routing decision only; never implements code or invokes agents."
-argument-hint: "Goal, stack, constraints, and candidate rows supplied from Orchestrator's embedded routing index."
 model: "Claude Haiku 5.5"
 user-invocable: false
 tools: []

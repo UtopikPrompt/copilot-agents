@@ -1,7 +1,6 @@
 ---
 name: "InfraPerformanceProfiler"
 description: "Evidence-based Python/Node CPU and memory profiling with OS, runtime-version and installed-profiler checks. Use for application bottlenecks and regressions; GPU model capacity and engine comparisons belong to the inference specialist."
-argument-hint: "Target application, profiling type (CPU/memory), and analysis requirements."
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

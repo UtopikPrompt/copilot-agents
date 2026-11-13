@@ -1,7 +1,6 @@
 ---
 name: "InfraIaCGenerator"
 description: "Generate and validate repository-native Terraform, Pulumi, Bicep or ARM infrastructure for the verified provider. Preserve state, account scope, least privilege and stage-specific authorization; no automatic apply, publication or deployment."
-argument-hint: "Infrastructure requirements, target cloud (Azure/AWS/GCP), IaC format preference, and security/compliance needs."
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

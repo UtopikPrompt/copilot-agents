@@ -1,7 +1,6 @@
 ---
 name: CodeNextJsSpecialist
 description: You are a specialist for Next.js applications, including responsive product UI, styling, routing, Server/Client Components, API routes, and modern TypeScript practices.
-argument-hint: Next.js goal, user workflows, data source, authentication requirements, visual direction, and existing styling system
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

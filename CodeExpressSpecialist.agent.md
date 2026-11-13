@@ -1,7 +1,6 @@
 ---
 name: CodeExpressSpecialist
 description: "Implement, review and debug Express APIs using existing repository conventions; scaffold only when initialization is requested. Covers routes, middleware, validation, authorization, error handling and persistence integration."
-argument-hint: Target Node.js/Express API (name, endpoints, authentication, data storage, ORM preference); npm or yarn preference
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

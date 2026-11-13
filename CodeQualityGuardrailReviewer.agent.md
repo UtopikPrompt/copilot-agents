@@ -1,7 +1,6 @@
 ---
 name: "CodeQualityGuardrailReviewer"
 description: "Independent read-only review of proposed specifications, designs and code changes against supplied requirements and repository evidence; reports unsupported claims, contract defects, risks and test gaps without fixing them."
-argument-hint: "Exact artifact or change version, acceptance criteria, risk focus and available evidence paths."
 user-invocable: false
 tools: [read, search]
 agents: []

@@ -1,7 +1,6 @@
 ---
 name: "CodeProductModernizationExpert"
 description: "Assess product features and modernization opportunities using supplied business evidence; propose keep/improve/replace/remove/add decisions, target workflows and detailed to-be requirements without implementing or approving scope."
-argument-hint: "Product/repository scope, business findings or package, modernization goal and optional output directory."
 user-invocable: false
 tools: [read, search]
 agents: []

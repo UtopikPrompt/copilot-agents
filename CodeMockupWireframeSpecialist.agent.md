@@ -1,7 +1,6 @@
 ---
 name: "CodeMockupWireframeSpecialist"
 description: "Specialized in producing direct, readable mockups with Unicode box-drawing in Copilot Chat. Turns requirements into numbered node and screen layouts with concise design notes and no process narration."
-argument-hint: "Screen or user flow, target audience, viewport, requirements, and existing design constraints."
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

@@ -4,7 +4,6 @@ description: >
   Specialized for Kubernetes cluster engineering: Helm/Kustomize manifests,
   cluster/operator definitions, AKS and other cluster-engine provisioning,
   RBAC/roles, Ingress and networking, and kubectl pod/namespace troubleshooting.
-argument-hint: "Cluster target (AKS/cluster engine), task scope (manifests/operators/networking/debugging), and acceptance criteria."
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

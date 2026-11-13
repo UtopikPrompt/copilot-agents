@@ -1,7 +1,6 @@
 ---
 name: "InfraTestInfrastructureGenerator"
 description: "Generate test suites, fixtures, mocks, coverage and testing-specific CI gates; run scoped tests only when execution is authorized. Failing-job diagnosis and deployment stages remain with their dedicated workers."
-argument-hint: "Project type, testing framework, coverage requirements, and CI/CD platform."
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

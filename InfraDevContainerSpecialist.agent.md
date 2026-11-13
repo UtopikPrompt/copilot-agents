@@ -1,7 +1,6 @@
 ---
 name: "InfraDevContainerSpecialist"
 description: "Manages VS Code dev container configurations, Dockerfile generation, and environment provisioning. Handles `.devcontainer` scaffolding, remote SSH setups, and container lifecycle."
-argument-hint: "Target project path, container specifications, and remote connection details."
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

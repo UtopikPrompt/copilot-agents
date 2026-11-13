@@ -1,7 +1,6 @@
 ---
 name: "BusinessKnowledgeAdvisor"
 description: "Optional business-knowledge domain advisor for ambiguous business needs, requirements, business rules, process analysis, enterprise knowledge maps and evidence-grounded impact questions. Returns a selection decision only."
-argument-hint: "Goal, supplied evidence, scope and candidate routing rows."
 user-invocable: false
 tools: []
 agents: []

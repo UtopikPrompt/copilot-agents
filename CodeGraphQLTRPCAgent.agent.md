@@ -1,7 +1,6 @@
 ---
 name: "CodeGraphQLTRPCAgent"
 description: "Specialized for GraphQL API and tRPC scaffolding. Handles GraphQL schema (SDL), type definitions, resolvers, API design, and tRPC codegen patterns (Next.js). Supports Apollo Server, Hasura, and tRPC."
-argument-hint: "API/service name, GraphQL or tRPC preference, resolvers/fields, and data source."
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

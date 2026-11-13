@@ -1,7 +1,6 @@
 ---
 name: "CodeContextSchemaAuditor"
 description: "Read-only audit of database/API schemas, internal component and external-system dependencies, configuration and environment constraints for design or an As-Is System Reference; returns evidence-linked boundaries and gaps."
-argument-hint: "Repository paths, schemas/API specs/configuration, target environment, and audit goal."
 user-invocable: false
 tools: [read, search]
 agents: []

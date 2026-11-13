@@ -1,7 +1,6 @@
 ---
 name: "BusinessKnowledgeExpert"
 description: "Professional evidence-grounded analysis of business needs, requirements and business logic from supplied code, policies, regulations, processes and data; produces detailed catalogues, enterprise knowledge maps, traceability/impact answers and explicit quality audits."
-argument-hint: "Supplied material or knowledge package; analysis, question, impact, refresh or audit goal; optional output directory."
 user-invocable: false
 tools: [read, search]
 agents: []

@@ -1,7 +1,6 @@
 ---
 name: "ContextSummarizer"
 description: "Produces a concise checkpoint summary when context pressure is observed or the user explicitly requests one. Does not modify chat history, trigger runtime compaction, or run on a fixed turn count."
-argument-hint: "Conversation excerpt, active task, verified facts, constraints, and unresolved work to summarize."
 user-invocable: false
 tools: [read]
 ---

@@ -1,7 +1,6 @@
 ---
 name: InfraLLMInferenceSpecialist
 description: "Diagnose and configure local LLM inference: Ollama, llama.cpp, GGUF, GPU offload, VRAM/KV-cache budgets, context limits, model loading, runtime compatibility, and controlled engine comparisons. Not Kubernetes ownership, generic CPU profiling, or application orchestration code."
-argument-hint: "Runtime/model versions, hardware evidence, observed error or measurement, constraints, and authorized checks."
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 agents: []

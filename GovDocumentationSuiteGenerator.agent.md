@@ -1,7 +1,6 @@
 ---
 name: "GovDocumentationSuiteGenerator"
 description: "Write documentation and READMEs; classify existing docs by Diataxis user need for an As-Is System Reference and faithfully export supplied architecture/business records with evidence and status."
-argument-hint: "Documentation type, target audience, and project context."
 user-invocable: false
 tools: [read, search, edit, todo]
 ---

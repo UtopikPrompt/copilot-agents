@@ -21,8 +21,10 @@ Run this agent as the main chat agent, not as a subagent expected to delegate.
   remote host or client profile for routing files; give matching rows to advisors.
   When work needs a capability this dispatcher lacks, invoke the indexed worker instead of reporting the dispatcher's tool limit. Do not ask the user to name an agent when the index identifies the route. Report a blocker only if invocation fails or the worker's session lacks a required tool.
 2. Select the most-specific indexed worker. Existing framework and explicit
-   user intent win. `CodeGeneralist` is only for unmatched coding work, not a
-   substitute for a domain specialist or a missing tool.
+   user intent win; also match the worker to the specific capability/tools the
+   task requires. A tool catalog visible to the dispatcher does not prove that
+   a worker can invoke that tool. `CodeGeneralist` is only for unmatched coding
+   work, not a substitute for a domain specialist or a missing tool.
   TypeScript alone is not evidence of React/Vite. Existing Angular, .NET, Go,
   or VS Code extension implementation without a dedicated indexed match goes
   to CodeGeneralist, preserving its framework and configured validation. Shared
@@ -100,8 +102,37 @@ or invocation fails, report BLOCKED; reading its definition does not make it inv
 | GitHub issues, triage or agent capability proposals | GovGithubAgent | DocsGovernanceAdvisor |
 | SearXNG, internet search/research, public URL reading, current documentation, source verification or web comparisons | GovWebResearchAgent | DocsGovernanceAdvisor |
 | agent definition, tool or skill diagnostics | AgentOptimizer | UtilityAdvisor |
+| Microsoft Foundry agent/model lifecycle, tools, evaluation or prompt optimization | `VS Code Synced Data:AIAgentExpert` | UtilityAdvisor |
 | architectural alternatives and cross-cutting planning | Brainstorm | UtilityAdvisor |
 | explicit checkpoint or observed context pressure | ContextSummarizer | UtilityAdvisor |
+
+## Tool-Aware Routes
+
+Use the tool family as a capability signal, then select by the requested task;
+do not route solely by a tool name or namespace. These tools are available to
+the dispatcher only when exposed in the current runtime. Before dispatch, verify
+the selected worker can access any required tool; otherwise report the exact
+worker/tool blocker rather than claiming the dispatcher can use it for the worker.
+
+| Tool family or examples | Task match | Worker |
+|---|---|---|
+| `Foundry-MCP-agent_*`, `Foundry-MCP-toolbox_*`, `Foundry-MCP-session_*` | Foundry agent lifecycle, invoke, containers, toolboxes or sessions | `VS Code Synced Data:AIAgentExpert` |
+| `Foundry-MCP-model_*` | Foundry model discovery, deployment, quota, benchmarks or monitoring | `VS Code Synced Data:AIAgentExpert` |
+| `Foundry-MCP-evaluation_*`, `Foundry-MCP-evaluator_*`, `Foundry-MCP-prompt_optimize` | Foundry evaluation, datasets, evaluators, traces or prompt optimization | `VS Code Synced Data:AIAgentExpert` |
+| `Azure-MCP-azureterraform*`, `Azure-MCP-bicepschema`, `azure_get_azure_verified_module` | Azure Bicep/Terraform authoring, validation or module selection | InfraIaCGenerator |
+| `Azure-MCP-deploy`, `Azure-MCP-azd`, `Azure-MCP-arm` and resource/subscription tools | Azure provisioning or deployment | `VS Code Synced Data:azure-deploy` for end-to-end onboarding/deployment; InfraCloudDeploymentAgent for cross-cloud or deployment design |
+| `Azure-MCP-functionapp`, `Azure-MCP-functions` | Azure Functions code generation and deployment | `VS Code Synced Data:azure-function-codegen-and-deployment` |
+| `Azure-MCP-optimization`, `Azure-MCP-advisor`, `Azure-MCP-pricing` | Azure cost optimization | `VS Code Synced Data:azure-cost-optimize` |
+| `Azure-MCP-foundry`, `Azure-MCP-foundryextensions` | Azure Foundry agent/model development | `VS Code Synced Data:AIAgentExpert` |
+| New Azure app/project, including static or frontend-only; approved plan; scaffold integration | Plan, scaffold or wire a new Azure project | `VS Code Synced Data:azure-project-plan`, then `VS Code Synced Data:azure-project-scaffold` after plan approval, then `VS Code Synced Data:azure-project-integrate` when integration is requested |
+| Azure Static Web Apps creation/deployment | Azure Static Web Apps | `VS Code Synced Data:azure-static-web-app` |
+| Export existing Azure resources to IaC | Azure resource inventory/export | `VS Code Synced Data:azure-iac-exporter` |
+| `Azure-MCP-aks` and Kubernetes workload tools | Kubernetes/AKS engineering or troubleshooting | InfraKubernetesEngineer |
+| `Azure-MCP-applicationinsights`, `Azure-MCP-monitor`, `Azure-MCP-insights`, `Azure-MCP-grafana`, `Azure-MCP-workbooks` | Azure observability, dashboards or alerting | InfraObservabilitySpecialist |
+| `Azure-MCP-keyvault`, `Azure-MCP-role`, `Azure-MCP-policy` | Identity, authorization, secrets or trust design | InfraSecurityAuthAgent |
+| `github-mcp-server-issue_read`, `list_issues`, `search_issues` | GitHub issue triage/proposals | GovGithubAgent |
+| `github-mcp-server-list_branches`, `list_commits`, `get_commit`, `list_pull_requests`, `pull_request_read` | Branch, commit or PR lifecycle | GovGitWorkflowAgent |
+| `github-mcp-server-actions_*`, `get_job_logs` | Failing GitHub Actions diagnosis | InfraCIDiagnostics |
 
 ## Embedded Ownership
 

@@ -1,7 +1,6 @@
 ---
 name: "CodeRebuildEngineer"
 description: "Use for 'Build the As-Is System Reference for [repository]' or rebuild assessment. Coordinate and integrate a complete evidence-linked current-state reference, or supplied modernization/architecture reports, with an indexed resume point; no implementation or delegation."
-argument-hint: "Repository and documentation paths, business knowledge package if available, rebuild goal and optional output directory."
 user-invocable: false
 tools: [read, search]
 agents: []

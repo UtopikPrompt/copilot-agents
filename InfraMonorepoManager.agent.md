@@ -1,7 +1,6 @@
 ---
 name: "InfraMonorepoManager"
 description: "Coordinate workspace packages, dependency graphs, version synchronization and affected builds; return publication and Git requirements through Orchestrator without publishing or tagging."
-argument-hint: "Monorepo path, package structure, and version management requirements."
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

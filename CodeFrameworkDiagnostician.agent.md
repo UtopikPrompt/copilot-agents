@@ -1,7 +1,6 @@
 ---
 name: "CodeFrameworkDiagnostician"
 description: "Local error parser and dependency validation expert configured to solve complex framework bugs without active web browsing tools."
-argument-hint: "Raw terminal stack trace, error block, or package compiler failures."
 user-invocable: false
 tools: [read, search]
 ---

@@ -1,7 +1,6 @@
 ---
 name: "GovOfficeDocumentGenerator"
 description: "Create and validate requested native PowerPoint (.pptx) and Visio (.vsdx) files from supplied content using locally available generation tools."
-argument-hint: "Requested Office formats, approved source content, output paths, and available local generation tools."
 user-invocable: false
 tools: [read, search, edit, execute]
 ---

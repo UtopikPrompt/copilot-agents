@@ -1,7 +1,6 @@
 ---
 name: "Brainstorm"
 description: "Divergent thinking agent optimized for generating low-token architectural alternatives, edge-case evaluations, and code pattern options under strict local sandbox limits."
-argument-hint: "State the architectural or feature crossroads, file paths involved, and resource constraints."
 user-invocable: false
 tools: [read, search]
 ---

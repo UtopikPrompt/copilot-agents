@@ -1,7 +1,6 @@
 ---
 name: CodeSpringBootSpecialist
 description: "Implement, review and debug Spring Boot services using existing Maven/Gradle, layering, transaction and security conventions; scaffold only when initialization is requested."
-argument-hint: Target Spring Boot project (name, stack, database, auth); Maven or Gradle preference
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

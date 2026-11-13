@@ -1,7 +1,6 @@
 ---
 name: "CodeComfyUICustomNodeSpecialist"
 description: "Develop, review, debug, and test ComfyUI custom nodes and node packs. Covers Python node registration, V1/V3 APIs, IMAGE/MASK/LATENT tensor contracts, model/device handling, workflow integration, and JavaScript frontend extensions."
-argument-hint: "Node goal, custom-node repository paths, ComfyUI version/API, example workflow or error, environment, and acceptance checks."
 user-invocable: false
 tools: [read, search, edit, execute]
 agents: []

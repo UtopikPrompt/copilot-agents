@@ -1,7 +1,6 @@
 ---
 name: "InfraReleaseManager"
 description: "Prepare versions, changelogs, release notes, and artifact publication with stage-specific authorization. Return Git mutations to Orchestrator for GovGitWorkflowAgent; preparation never authorizes publication or deployment."
-argument-hint: "Project path, version bump type, and publishing targets."
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

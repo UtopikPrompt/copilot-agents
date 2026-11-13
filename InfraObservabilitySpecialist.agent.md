@@ -1,7 +1,6 @@
 ---
 name: "InfraObservabilitySpecialist"
 description: "Specialized for observability engineering. Creates error monitoring, structured logging, distributed tracing (OpenTelemetry), metrics dashboards, and alerting rules. Supports Application Insights, Azure Monitor, and Log Analytics."
-argument-hint: "Service/component name, signals of interest (errors, logs, traces), and monitoring goals."
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

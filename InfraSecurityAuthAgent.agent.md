@@ -1,7 +1,6 @@
 ---
 name: "InfraSecurityAuthAgent"
 description: "Provider-neutral authentication, authorization, RBAC, secrets and trust design. Use for GitHub App/OIDC, AWS IAM/Cognito, Azure identity, application authorization, or Kubernetes Secret delivery; diagnose the evidenced boundary without automatic permission expansion."
-argument-hint: "Auth method, resource scope, compliance requirements, and identity provider."
 user-invocable: false
 tools: [read, search, edit, execute, todo]
 ---

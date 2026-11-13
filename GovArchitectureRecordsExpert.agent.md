@@ -1,7 +1,6 @@
 ---
 name: "GovArchitectureRecordsExpert"
 description: "Draft and maintain repository-native ADRs, RFCs, and architecture records. Preserve human decision authority; proposals are not approved decisions. No application implementation or delegation."
-argument-hint: "Target ADR file path, proposal goals, or configuration adjustments."
 user-invocable: false
 tools: [read, search, edit]
 ---

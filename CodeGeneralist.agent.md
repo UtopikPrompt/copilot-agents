@@ -1,7 +1,6 @@
 ---
 name: "CodeGeneralist"
 description: "Implement, review, debug, or refactor code when no framework or domain specialist fits. Follow the target repository's language, conventions, and tests; never scaffold an unrelated stack."
-argument-hint: "Goal, target files, constraints, acceptance checks, and relevant verified evidence."
 user-invocable: false
 tools: [read, search, edit, execute]
 agents: []
